@@ -19,11 +19,15 @@ cd API-Test-Automation <br>
 Since this project uses Maven, run the following command to download all required dependencies: <br>
 mvn clean install <br>
 
-4️⃣ Configure API Token <br>
+4️⃣ 🔑 Setting the API Token <br>
 This project requires a Bearer Token for authentication. <br>
-📌 Set the token in the src/test/resources/config.properties file <br>
-API_TOKEN=your_api_token_here <br>
-🔹 Replace your_api_token_here with the actual API token for testing. <br>
+Set Token via Command Line <br>
+Run the following command before running tests: <br>
+export API_TOKEN="your_api_token_here" ---> # For macOS/Linux <br>
+set API_TOKEN="your_api_token_here"  --->    # For Windows (CMD) <br>
+$env:API_TOKEN="your_api_token_here"  --->   # For Windows (PowerShell) <br>
+🔹 Replace "your_api_token_here" with your actual API token. <br>
+
 
 5️⃣ Run Tests <br>
 📌 Run test cases by selecting the desired group <br>
