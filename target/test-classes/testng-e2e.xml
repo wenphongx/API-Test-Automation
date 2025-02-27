@@ -8,10 +8,6 @@
         </groups>
         <classes>
             <class name="SmockTest"/>
-            <class name="Get_API_GetUser"/>
-            <class name="Post_API_CreateUser"/>
-            <class name="Put_API_UpdateUser"/>
-            <class name="Delete_API_DeleteUser"/>
         </classes>
     </test>
 </suite>
