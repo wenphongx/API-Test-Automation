@@ -36,7 +36,7 @@ mvn test <br>
 Running Tests Manually in the IDE <br>
 If you prefer to run tests manually instead of using the command line, you can do so directly from your IDE (IntelliJ IDEA, Eclipse, or VS Code). <br>
 
-🔹 Option 1: Run Individual Test Cases <br>
+🔹 Run Individual Test Cases <br>
 Open your IDE and navigate to the src/test/java folder. <br>
 Locate the test class you want to run (e.g., Post_API_CreateUser.java or SmockTest.java). <br>
 Right-click on the test method (e.g., testCreateUser) or the class name. <br>
