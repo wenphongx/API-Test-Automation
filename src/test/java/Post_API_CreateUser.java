@@ -31,7 +31,7 @@ public class Post_API_CreateUser extends BaseTest {
         API_Utils.createAndVerifyUser(TOKEN,userData, 201);
     }
 
-    @Test(priority = 1, description = "Test Create User with Duplicate Email")
+    @Test(priority = 2, description = "Test Create User with Duplicate Email")
     public void testCreateUserDuplicateEmail() {
         Map<String, Object> userData = new HashMap<>();
         userData.put("name", testData.get("name").asText());
@@ -42,7 +42,7 @@ public class Post_API_CreateUser extends BaseTest {
         API_Utils.createAndVerifyUser(TOKEN,userData, 422);
     }
 
-    @Test(priority = 2, description = "Test Create User Without Email")
+    @Test(priority = 3, description = "Test Create User Without Email")
     public void testCreateUserWithoutEmail() {
         Map<String, Object> userData = new HashMap<>();
         userData.put("name", testData.get("name").asText());
@@ -52,7 +52,7 @@ public class Post_API_CreateUser extends BaseTest {
         API_Utils.createAndVerifyUser(TOKEN,userData, 422);
     }
 
-    @Test(priority = 3, description = "Test Create User With Invalid Status")
+    @Test(priority = 4, description = "Test Create User With Invalid Status")
     public void testCreateUserInvalidStatus() {
         Map<String, Object> userData = new HashMap<>();
         userData.put("name", testData.get("name").asText());
@@ -63,7 +63,7 @@ public class Post_API_CreateUser extends BaseTest {
         API_Utils.createAndVerifyUser(TOKEN,userData, 422);
     }
 
-    @Test(priority = 4, description = "Test Create User With Invalid Gender")
+    @Test(priority = 5, description = "Test Create User With Invalid Gender")
     public void testCreateUserInvalidGender() {
         Map<String, Object> userData = new HashMap<>();
         userData.put("name", testData.get("name").asText());
@@ -74,7 +74,7 @@ public class Post_API_CreateUser extends BaseTest {
         API_Utils.createAndVerifyUser(TOKEN,userData, 422);
     }
 
-    @Test(priority = 5, description = "Test Create User Without Token")
+    @Test(priority = 6, description = "Test Create User Without Token")
     public void testCreateUserWithoutToken() {
         Map<String, Object> userData = new HashMap<>();
         userData.put("name", testData.get("name").asText());
@@ -93,7 +93,7 @@ public class Post_API_CreateUser extends BaseTest {
         Assert.assertEquals(response.getStatusCode(), 401, "Expected 401 but got " + response.getStatusCode());
     }
 
-    @Test(priority = 6, description = "Test Create User With Invalid Token")
+    @Test(priority = 7, description = "Test Create User With Invalid Token")
     public void testCreateUserWithInvalidToken() {
         Map<String, Object> userData = new HashMap<>();
         userData.put("name", testData.get("name").asText());
