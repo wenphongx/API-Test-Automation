@@ -1,0 +1,11 @@
+{
+  "name": "John Doe",
+  "email_prefix": "john.doe",
+  "email_domain": "@example.com",
+  "gender": "male",
+  "status": "active",
+  "existingUserId": 7373679,
+  "nonExistingUserId": 9999999,
+  "invalidUserId": "abc123",
+  "deletedUserId": 8888888
+}

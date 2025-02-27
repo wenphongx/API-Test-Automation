@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Surefire suite" duration-ms="3809" started-at="2025-02-26T23:36:40Z" finished-at="2025-02-26T23:36:43Z">
+    <groups>
+      <group name="e2e">
+        <method signature="SmockTest.testCreateNewUser()[pri:1, instance:SmockTest@724af044]" name="testCreateNewUser" class="SmockTest"/>
+        <method signature="SmockTest.testGetUser()[pri:2, instance:SmockTest@724af044]" name="testGetUser" class="SmockTest"/>
+        <method signature="SmockTest.testUpdateUser()[pri:3, instance:SmockTest@724af044]" name="testUpdateUser" class="SmockTest"/>
+        <method signature="SmockTest.testDeleteUser()[pri:4, instance:SmockTest@724af044]" name="testDeleteUser" class="SmockTest"/>
+      </group> <!-- e2e -->
+    </groups>
+    <test name="Surefire test" duration-ms="3809" started-at="2025-02-26T23:36:40Z" finished-at="2025-02-26T23:36:43Z">
+      <class name="SmockTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:SmockTest@724af044]" name="setup" is-config="true" duration-ms="302" started-at="2025-02-26T23:36:40Z" finished-at="2025-02-26T23:36:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="testCreateNewUser()[pri:1, instance:SmockTest@724af044]" name="testCreateNewUser" duration-ms="2046" started-at="2025-02-26T23:36:40Z" description="Test Get Existing User" finished-at="2025-02-26T23:36:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCreateNewUser -->
+        <test-method status="PASS" signature="testGetUser()[pri:2, instance:SmockTest@724af044]" name="testGetUser" duration-ms="361" started-at="2025-02-26T23:36:42Z" description="Test Get Existing User" finished-at="2025-02-26T23:36:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetUser -->
+        <test-method status="PASS" signature="testUpdateUser()[pri:3, instance:SmockTest@724af044]" name="testUpdateUser" duration-ms="362" started-at="2025-02-26T23:36:42Z" description="Test Update User" depends-on-methods="SmockTest.testGetUser" finished-at="2025-02-26T23:36:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUpdateUser -->
+        <test-method status="PASS" signature="testDeleteUser()[pri:4, instance:SmockTest@724af044]" name="testDeleteUser" duration-ms="726" started-at="2025-02-26T23:36:43Z" description="Test Delete User" depends-on-methods="SmockTest.testUpdateUser" finished-at="2025-02-26T23:36:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDeleteUser -->
+      </class> <!-- SmockTest -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>
